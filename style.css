@@ -105,3 +105,143 @@ a {
   font-size: 0.9rem;
   opacity: 0.8;
 }
+
+/* ===== プロダクト紹介ページ用 ===== */
+
+.hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.hero-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.15rem;
+}
+
+.hero .subtitle {
+  opacity: 0.6;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero .lead {
+  max-width: 480px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.85;
+}
+
+.badges {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid #d1d1d6;
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge {
+    border-color: #333;
+  }
+}
+
+.cta {
+  display: inline-block;
+  background: #007aff;
+  color: #fff;
+  border-radius: 12px;
+  padding: 0.75rem 1.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.cta.disabled {
+  background: #8e8e93;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.screenshot-scroll {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  margin: 2rem -1.25rem;
+  padding: 0 1.25rem 0.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.screenshot-scroll img {
+  height: 380px;
+  width: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+section.features {
+  margin: 2.5rem 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 480px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature {
+  border: 1px solid #d1d1d6;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .feature {
+    border-color: #333;
+  }
+}
+
+.feature h3 {
+  margin-top: 0;
+  font-size: 0.95rem;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 0.88rem;
+  opacity: 0.75;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.disclaimer {
+  font-size: 0.78rem;
+  opacity: 0.55;
+  margin-top: 3rem;
+}
