@@ -1,0 +1,107 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", Roboto, sans-serif;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  color: #1c1c1e;
+  background: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #f2f2f7;
+    background: #000000;
+  }
+  a {
+    color: #6fb2ff;
+  }
+  hr {
+    border-color: #333;
+  }
+  .card {
+    border-color: #333;
+  }
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+}
+
+h2.lang-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  opacity: 0.7;
+  margin-bottom: 2.5rem;
+}
+
+.updated {
+  opacity: 0.6;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0.5rem 0 1rem;
+}
+
+hr {
+  margin: 3rem 0;
+  border: none;
+  border-top: 1px solid #d1d1d6;
+}
+
+a {
+  color: #007aff;
+}
+
+.nav {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.card {
+  display: block;
+  border: 1px solid #d1d1d6;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #007aff;
+}
+
+.card p {
+  margin-bottom: 0;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
