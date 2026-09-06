@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
 body {
@@ -10,22 +10,6 @@ body {
   padding: 2rem 1.25rem 4rem;
   color: #1c1c1e;
   background: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #f2f2f7;
-    background: #000000;
-  }
-  a {
-    color: #6fb2ff;
-  }
-  hr {
-    border-color: #333;
-  }
-  .card {
-    border-color: #333;
-  }
 }
 
 h1 {
@@ -155,12 +139,6 @@ a {
   opacity: 0.75;
 }
 
-@media (prefers-color-scheme: dark) {
-  .badge {
-    border-color: #333;
-  }
-}
-
 .cta {
   display: inline-block;
   background: #007aff;
@@ -217,12 +195,6 @@ section.features {
   padding: 1.1rem 1.25rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  .feature {
-    border-color: #333;
-  }
-}
-
 .feature h3 {
   margin-top: 0;
   font-size: 0.95rem;
@@ -244,4 +216,22 @@ section.features {
   font-size: 0.78rem;
   opacity: 0.55;
   margin-top: 3rem;
+}
+
+.support {
+  text-align: center;
+  border: 1px solid #d1d1d6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.support p {
+  margin-bottom: 1rem;
+}
+
+.support img {
+  height: 40px;
+  width: auto;
+  border: 0;
 }
