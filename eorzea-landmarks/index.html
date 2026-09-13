@@ -8,7 +8,16 @@
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<div class="nav"><a href="../">← Crystal Works</a></div>
+<div class="nav">
+  <a href="../">← Crystal Works</a>
+  <a href="./en.html">English</a>
+</div>
+
+<!-- クローズドテスト期間中のみ表示するブロック。テスト終了時にこのdivごと削除する -->
+<div class="announce">
+  <h2>Android版のテストにご協力いただける方を募集しています</h2>
+  <p>Google Playでの公開に向けて、クローズドテストを実施しています。参加方法は<a href="#android-test">ページ下部の案内</a>をご覧ください。</p>
+</div>
 
 <div class="hero">
   <img class="hero-icon" src="./images/icon.png" alt="Eorzea Landmarksアイコン">
@@ -20,8 +29,12 @@
     <span class="badge">広告なし</span>
     <span class="badge">日本語・英語対応</span>
     <span class="badge">iPhone・iPad対応</span>
+    <span class="badge">Android版テスト中</span>
   </div>
-  <a class="cta" href="https://apps.apple.com/jp/app/eorzea-landmarks/id6801703031" target="_blank" rel="noopener">App Storeで見る</a>
+  <div class="cta-row">
+    <a class="cta" href="https://apps.apple.com/jp/app/eorzea-landmarks/id6801703031" target="_blank" rel="noopener">App Storeで見る</a>
+    <a class="cta secondary" href="#android-test">Androidテストに参加する</a>
+  </div>
 </div>
 
 <div class="screenshot-scroll">
@@ -31,6 +44,24 @@
   <img src="./images/screenshot-4.png" alt="天候まとめ画面">
   <img src="./images/screenshot-5.png" alt="設定画面">
 </div>
+
+<section class="features">
+  <h2 class="section-title">こんな場面で使えます</h2>
+  <div class="feature-grid">
+    <div class="feature">
+      <h3>今すぐ行けるスポットを探したい</h3>
+      <p>PCでFF14を遊びながら、手元のスマホやタブレットで確認。エオルゼア時間と天候の条件が今そろっている未達成スポットが、一覧の先頭でわかります。</p>
+    </div>
+    <div class="feature">
+      <h3>条件が来たのを見逃したくない</h3>
+      <p>出現が不規則なスポットには通知ベルを立てておけます。条件が成立するタイミングで通知が届くので、天候の変化を待ち続ける必要がありません。</p>
+    </div>
+    <div class="feature">
+      <h3>場所がわからないスポットを埋めたい</h3>
+      <p>ルート動画をアプリ内から再生できます。自分用のメモや動画URLも保存できるので、次に行くときに迷いません。</p>
+    </div>
+  </div>
+</section>
 
 <section class="features">
   <h2 class="section-title">主な機能</h2>
@@ -52,12 +83,16 @@
       <p>拡張パック・エリア・天候・時間帯・キーワードを組み合わせてスポットを検索できます。</p>
     </div>
     <div class="feature">
+      <h3>エリアごとの天候を先読み</h3>
+      <p>全72エリアの現在の天候をまとめて確認。エリアを選べば、次の天候までのカウントダウンと今後の予報も見られます。</p>
+    </div>
+    <div class="feature">
       <h3>今後48時間の出現タイミングも表示</h3>
       <p>出現が不規則なスポットも、今後の出現タイミングを一覧で確認できます。</p>
     </div>
     <div class="feature">
       <h3>タブレットにも対応</h3>
-      <p>iPadでは2〜3カラムのレイアウトで、より見やすく利用できます。</p>
+      <p>タブレットでは2カラムのレイアウトになり、一覧と詳細を並べて見られます。</p>
     </div>
     <div class="feature">
       <h3>完全無料・広告なし</h3>
@@ -68,6 +103,52 @@
       <p>探検済みチェックやメモは端末内にのみ保存され、外部に送信されることはありません。機種変更時はエクスポート/インポート機能で手動移行できます。</p>
     </div>
   </div>
+</section>
+
+<!-- クローズドテスト期間中のみ表示するセクション。テスト終了時にこのsectionごと削除する -->
+<section class="panel" id="android-test">
+  <h2>Androidクローズドテストへの参加方法</h2>
+  <p>Google Playでアプリを一般公開するには、事前に一定期間のクローズドテストを行うことが求められています。Android版の公開に向けて、テストにご協力いただける方を募集しています。</p>
+
+  <h3>必要なもの</h3>
+  <ul class="facts">
+    <li>Android端末</li>
+    <li>Google Playにログイン済みのGoogleアカウント</li>
+  </ul>
+
+  <h3>参加の手順</h3>
+  <ol class="steps">
+    <li>下のボタンからGoogleグループに参加します。このグループのメンバーがテスターとして登録されます。</li>
+    <li>オプトインリンクを開き、「テスターになる」を選びます。</li>
+    <li>Google Playからアプリをインストールします。</li>
+  </ol>
+  <div class="cta-row">
+    <!-- TODO: Googleグループの参加URLに差し替える（crystalworksjp アカウントで作成後） -->
+    <a class="cta" href="#TODO-GOOGLE-GROUP-URL" target="_blank" rel="noopener">1. Googleグループに参加する</a>
+    <!-- TODO: Play Consoleが発行するオプトインURLに差し替える（審査承認後） -->
+    <a class="cta secondary" href="#TODO-OPTIN-URL" target="_blank" rel="noopener">2. オプトインリンクを開く</a>
+  </div>
+
+  <h3>メールアドレスの取り扱いについて</h3>
+  <p class="fine">テスターの登録は、Googleグループへの参加をもって行われます。開発者がフォームなどでメールアドレスを別途収集したり、保存したりすることはありません。用途はクローズドテストの配信に限られ、宣伝メールの送付など他の目的には一切使用しません。テストが終了したらグループは削除します。</p>
+
+  <h3>お願いしたいこと</h3>
+  <p class="fine">Google Playの公開要件として、12人以上のテスターが14日間続けてテストに参加している状態が必要です。恐れ入りますが、ご参加後14日間は、アンインストールやテストの解除をせずに置いていただけると助かります。</p>
+  <p class="fine">使ってみた感想や不具合のご連絡は、<a href="../contact.html">お問い合わせフォーム</a>からお寄せいただけると励みになります。</p>
+</section>
+
+<section class="panel">
+  <h2>開発者について</h2>
+  <p>「エオラン」は、Crystal Works（個人開発）が制作している非公式のファンメイドツールです。判断の材料として、以下の点をご確認ください。</p>
+  <ul class="facts">
+    <li><strong>iOS版はApp Storeで公開中です。</strong>Appleの審査を通過して配信されている、同じアプリのAndroid版にあたります（<a href="https://apps.apple.com/jp/app/eorzea-landmarks/id6801703031" target="_blank" rel="noopener">App Storeで見る</a>）</li>
+    <li>アカウント登録・ログインは不要です</li>
+    <li>広告・アプリ内課金はありません</li>
+    <li>探検済みチェックやメモは端末内にのみ保存され、外部のサーバーには送信されません</li>
+    <li>広告識別子（IDFA）は使用していません</li>
+    <li>不具合の把握と改善のため、匿名の利用状況（画面遷移・端末の種類・OS・言語）とクラッシュ情報のみをFirebaseで収集しています</li>
+  </ul>
+  <p class="fine">詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。ご質問は<a href="../contact.html">お問い合わせフォーム</a>からお寄せください。</p>
 </section>
 
 <div class="support">
