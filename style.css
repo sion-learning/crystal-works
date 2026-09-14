@@ -59,6 +59,10 @@ a {
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 2rem;
   font-size: 0.9rem;
 }
@@ -234,4 +238,103 @@ section.features {
   height: 40px;
   width: auto;
   border: 0;
+}
+
+/* ===== 告知バナー・参加導線・開発者情報 ===== */
+
+.announce {
+  border: 1px solid #007aff;
+  background: #f0f7ff;
+  border-radius: 12px;
+  padding: 1.1rem 1.35rem;
+  margin-bottom: 2.5rem;
+}
+
+.announce h2 {
+  font-size: 1rem;
+  margin: 0 0 0.4rem;
+}
+
+.announce p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.cta.secondary {
+  background: #ffffff;
+  color: #007aff;
+  border: 1px solid #007aff;
+}
+
+.panel {
+  border: 1px solid #d1d1d6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.panel h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.panel h3 {
+  font-size: 0.95rem;
+  margin-top: 1.5rem;
+}
+
+/* 番号付きの手順リスト */
+.steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+
+.steps li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 2.4rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.92rem;
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  background: #007aff;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facts {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0;
+  font-size: 0.92rem;
+}
+
+.facts li {
+  margin-bottom: 0.45rem;
+}
+
+/* 補足・注意書き用の小さめテキスト */
+.fine {
+  font-size: 0.85rem;
+  opacity: 0.75;
 }
